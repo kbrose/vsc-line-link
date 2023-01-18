@@ -1,9 +1,7 @@
 # Change Log
 
-All notable changes to the "remote-link" extension will be documented in this file.
+## Unreleased
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## 0.0.1
 
-## [Unreleased]
-
-- Initial release
+The initial release supports GitHub and GitLab (including self-hosted), and SSH/HTTPS remotes.

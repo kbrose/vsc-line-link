@@ -1,8 +1,36 @@
 {
-    "name": "remote-link",
-    "displayName": "RemoteLink",
-    "description": "asdf",
+    "name": "line-link",
+    "displayName": "LineLink",
+    "description": "Open a link to your exact line of code in a browser from VS Code. Compatible with GitHub and GitLab.",
     "version": "0.0.1",
+    "author": {
+        "name": "Kevin Rose",
+        "url": "https://github.com/kbrose"
+    },
+    "keywords": [
+        "link",
+        "github",
+        "gitlab",
+        "web",
+        "browser"
+    ],
+    "qna": false,
+    "capabilities": {
+        "untrustedWorkspaces": {
+            "supported": false,
+            "description": "A hostile repository could open a malicious link."
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kbrose/vsc-line-link"
+    },
+    "readme": "README.md",
+    "license": "MIT",
+    "extensionKind": [
+        "workspace",
+        "ui"
+    ],
     "engines": {
         "vscode": "^1.74.0"
     },
@@ -10,18 +38,18 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:remote-link.copyLink",
-        "onCommand:remote-link.openLink"
+        "onCommand:line-link.copyLink",
+        "onCommand:line-link.openLink"
     ],
     "main": "./out/extension.js",
     "contributes": {
         "commands": [
             {
-                "command": "remote-link.copyLink",
+                "command": "line-link.copyLink",
                 "title": "Copy Link To Code"
             },
             {
-                "command": "remote-link.openLink",
+                "command": "line-link.openLink",
                 "title": "Open in Browser"
             }
         ]

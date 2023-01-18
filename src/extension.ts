@@ -1,16 +1,16 @@
 import * as vscode from 'vscode';
 
 // get typings for the VSCode Git extension API
-import { GitExtension, Remote } from './typings/git';
+import { GitExtension } from './typings/git';
 
 const SSH_REGEX = /git@(?<host>.*):(?<path>.*)\.git/;
 const HTTP_REGEX = /http[s]:\/\/(?<host>.*)\/(?<path>.*)\.git/;
 
 export function activate(context: vscode.ExtensionContext) {
     const gitExtension = vscode.extensions.getExtension<GitExtension>('vscode.git')?.exports!;
-    let disposable1 = vscode.commands.registerCommand('remote-link.copyLink', () => { copyLink(gitExtension); });
+    let disposable1 = vscode.commands.registerCommand('line-link.copyLink', () => { copyLink(gitExtension); });
     context.subscriptions.push(disposable1);
-    let disposable2 = vscode.commands.registerCommand('remote-link.openLink', () => { openLink(gitExtension); });
+    let disposable2 = vscode.commands.registerCommand('line-link.openLink', () => { openLink(gitExtension); });
     context.subscriptions.push(disposable2);
 }
 

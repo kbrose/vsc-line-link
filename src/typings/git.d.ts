@@ -3,6 +3,10 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
+// NOTE: the "project root" in the above notice refers to this location:
+// https://github.com/Microsoft/vscode/
+
+// Perma-link to the exact version of this file that was copied:
 // https://github.com/Microsoft/vscode/blob/04b15ff231a2c3cfcdd90d90c16075a9c1e6da15/extensions/git/src/api/git.d.ts
 
 import { Uri, Event, Disposable, ProviderResult, Command } from 'vscode';
